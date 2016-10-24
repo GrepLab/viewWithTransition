@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>ngRoute example</title>
+    <link rel="stylesheet" href="../dist/view-with-transition.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="mainController">
+
+    <header class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <span class="navbar-text">view-with-transition example</span>
+            <ul class="nav navbar-nav">
+                <li><a href="#state1">State 1</a></li>
+                <li><a href="#state2">State 2</a></li>
+                <li><a href="#state3">State 3</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="view-container">
+            <ng-view view-with-transition="zoom-in"></ng-view>
+        </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+        <div class="container text-center">
+            Footer
+        </div>
+    </footer>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../dist/view-with-transition.min.js"></script>
+    <script src="ng-router.js"></script>
+</body>
+</html>

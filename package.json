@@ -1,0 +1,36 @@
+{
+  "name": "view-with-transition",
+  "version": "0.1.0",
+  "description": "Angular state transitions with block containers made simple",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzegarra/view-with-transition.git"
+  },
+  "keywords": [
+    "angular",
+    "transition",
+    "css",
+    "router",
+    "ui-router"
+  ],
+  "author": "dzegarra@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dzegarra/view-with-transition/issues"
+  },
+  "homepage": "https://github.com/dzegarra/view-with-transition#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.0"
+  }
+}

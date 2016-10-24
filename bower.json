@@ -1,0 +1,36 @@
+{
+  "name": "view-with-transition",
+  "homepage": "https://github.com/dzegarra/view-with-transition",
+  "description": "Angular state transitions with block containers made simple",
+  "main": [
+    "dist/view-with-transition.min.js",
+    "dist/view-with-transition.min.css"
+  ],
+  "keywords": [
+    "angular",
+    "transition",
+    "router",
+    "ui-router",
+    "animation",
+    "css"
+  ],
+  "authors": [
+    "dzegarra@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.3.0"
+  },
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.3.1"
+  }
+}
