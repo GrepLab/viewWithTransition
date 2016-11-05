@@ -1,7 +1,7 @@
 'use strict';
 
 let gulp = require('gulp'),
-    uglify = require('gulp-uglify'),
+    del = require('del'),
     sass = require('gulp-sass'),
     rename = require('gulp-rename'),
     sourcemaps = require('gulp-sourcemaps');
@@ -9,22 +9,23 @@ let gulp = require('gulp'),
 let sourceDir = './src';
 let buildDir = './dist';
 
-gulp.task('build-js', function () {
+gulp.task('clean', function () {
+    del('dist');
+});
+
+gulp.task('build:scripts', function () {
     gulp.src(`${sourceDir}/*.js`)
-        .pipe(sourcemaps.init())
-        .pipe(uglify())
-        .pipe(rename('view-with-transition.min.js'))
-        .pipe(sourcemaps.write('./'))
+        .pipe(rename('view-with-transition.js'))
         .pipe(gulp.dest(buildDir));
 });
 
-gulp.task('build-css', function () {
+gulp.task('build:styles', function () {
     gulp.src(`${sourceDir}/*.scss`)
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(rename('view-with-transition.min.css'))
+        .pipe(rename('view-with-transition.css'))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(buildDir));
 });
 
-gulp.task('default', ['build-js', 'build-css']);
+gulp.task('default', ['clean', 'build:scripts', 'build:styles']);

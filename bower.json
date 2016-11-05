@@ -3,9 +3,13 @@
   "homepage": "https://github.com/dzegarra/view-with-transition",
   "description": "Angular state transitions with block containers made simple",
   "main": [
-    "dist/view-with-transition.min.js",
-    "dist/view-with-transition.min.css"
+    "dist/view-with-transition.js",
+    "dist/view-with-transition.css"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dzegarra/view-with-transition.git"
+  },
   "keywords": [
     "angular",
     "transition",
@@ -15,7 +19,7 @@
     "css"
   ],
   "authors": [
-    "dzegarra@gmail.com"
+    "Daniel Zegarra <dzegarra@gmail.com> (http://danielzegarra.info)"
   ],
   "license": "MIT",
   "ignore": [
