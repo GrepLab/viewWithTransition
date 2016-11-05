@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/dzegarra/Projects/Personal/view-with-transition',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/dzegarra/.npm/view-with-transition/0.1.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/dzegarra/.npm correctMkdir not in flight; initializing
+10 info lifecycle view-with-transition@0.1.1~prepublish: view-with-transition@0.1.1
+11 silly lifecycle view-with-transition@0.1.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/dzegarra/.npm/view-with-transition/0.1.1/package.tgz',
+12 verbose tar pack   '/home/dzegarra/Projects/Personal/view-with-transition' ]
+13 verbose tarball /home/dzegarra/.npm/view-with-transition/0.1.1/package.tgz
+14 verbose folder /home/dzegarra/Projects/Personal/view-with-transition
+15 verbose addLocalTarball adding from inside cache /home/dzegarra/.npm/view-with-transition/0.1.1/package.tgz
+16 verbose correctMkdir /home/dzegarra/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd view-with-transition@0.1.1
+18 verbose afterAdd /home/dzegarra/.npm/view-with-transition/0.1.1/package/package.json not in flight; writing
+19 verbose correctMkdir /home/dzegarra/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/dzegarra/.npm/view-with-transition/0.1.1/package/package.json written
+21 silly publish { name: 'view-with-transition',
+21 silly publish   version: '0.1.1',
+21 silly publish   description: 'Angular state transitions with block containers made simple',
+21 silly publish   main: 'src/directive.js',
+21 silly publish   directories: { example: 'example' },
+21 silly publish   scripts: { build: 'gulp', commit: 'git-cz' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/dzegarra/view-with-transition.git' },
+21 silly publish   keywords: [ 'angular', 'transition', 'css', 'router', 'ui-router' ],
+21 silly publish   author:
+21 silly publish    { name: 'Daniel Zegarra',
+21 silly publish      email: 'dzegarra@gmail.com',
+21 silly publish      url: 'http://danielzegarra.info' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/dzegarra/view-with-transition/issues' },
+21 silly publish   homepage: 'https://github.com/dzegarra/view-with-transition#readme',
+21 silly publish   devDependencies:
+21 silly publish    { del: '2.2.2',
+21 silly publish      gulp: '3.9.1',
+21 silly publish      'gulp-rename': '^1.2.2',
+21 silly publish      'gulp-sass': '^2.3.2',
+21 silly publish      'gulp-sourcemaps': '^2.1.1' },
+21 silly publish   config: { commitizen: { path: 'node_modules/cz-conventional-changelog' } },
+21 silly publish   readme: '# view-with-transition\n\nAngular 1.x ngRoute state transitions with block containers made simple.\n\n## Installation\n\n### Using Bower\n\n```shell\nbower install view-with-transition\n```\n\n### Using npm\n```shell\nnpm install view-with-transition\n```\n\n### Declare in angular app manifest\n```js\nangular.module(\'myApp\', [\'ui.route\', \'dzegarra.utils.transitions\']);\n```\n\n## Use\n\nFor be able of managing the transition is required to move the ui-view element inside a container.\n\n### HTML\n```html\n<head>\n    ...\n    <link rel="stylesheet" href="view-with-transition.min.css">\n    ...\n</head>\n<body>\n    ...\n    <main class="view-container">\n        <ui-view view-with-transition></ui-view>\n    </main>\n    ...\n    <script src="view-with-transition.min.js"></script>\n    <script src="app.js"></script>\n</body>\n```\n\n### Custom transitions\n\nBy default the transition used is `fade`. You can set new transitions passing the\nname of the CSS class with the transition as a value of `view-with-transition` \ndirective.\n\n#### This library came with a few transition effects:\n - zoom-in\n - slide-left\n - slide-right\n - slide-up\n - slide-down\n\nFor can use these this way:\n```html\n<main class="view-container">\n    <ui-view view-with-transition="zoom-in"></ui-view>\n</main>\n```\n\nAnd yep, you can create your own transitions and use then this way.',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'fa1c69d83a72b51b2c8f0ce3401aaba3a74330f8',
+21 silly publish   _id: 'view-with-transition@0.1.1',
+21 silly publish   _shasum: '9c60f8b8fbef21dc7bc3eb42c7f9500585818db3',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name view-with-transition
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'view-with-transition',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'view-with-transition',
+26 silly mapToRegistry   name: 'view-with-transition',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/view-with-transition
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/dzegarra/.npm/view-with-transition/0.1.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/view-with-transition
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 23:45:56
+33 verbose request using bearer token for auth
+34 verbose request id 4f156a21a411d04e
+35 http request PUT https://registry.npmjs.org/view-with-transition
+36 http 403 https://registry.npmjs.org/view-with-transition
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sat, 05 Nov 2016 22:45:57 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lhr6324-LHR',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1478385956.572923,VS0,VE1044',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /home/dzegarra/.npm/registry.npmjs.org/view-with-transition on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.1.1." : view-with-transition
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid view-with-transition
+43 verbose cwd /home/dzegarra/Projects/Personal/view-with-transition
+44 error Linux 4.8.0-26-generic
+45 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+46 error node v6.9.1
+47 error npm  v3.10.8
+48 error code E403
+49 error "You cannot publish over the previously published version 0.1.1." : view-with-transition
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
