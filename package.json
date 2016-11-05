@@ -1,8 +1,8 @@
 {
   "name": "view-with-transition",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Angular state transitions with block containers made simple",
-  "main": "index.js",
+  "main": "src/directive.js",
   "directories": {
     "example": "example"
   },
@@ -20,13 +20,15 @@
     "router",
     "ui-router"
   ],
-  "author": "dzegarra@gmail.com",
+  "author": "Daniel Zegarra <dzegarra@gmail.com> (http://danielzegarra.info)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dzegarra/view-with-transition/issues"
   },
   "homepage": "https://github.com/dzegarra/view-with-transition#readme",
   "devDependencies": {
+    "commitizen": "2.8.6",
+    "cz-conventional-changelog": "1.2.0",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
