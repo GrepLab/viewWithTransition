@@ -1,6 +1,9 @@
 # view-with-transition
 
-Angular 1.x ngRoute state transitions with block containers made simple.
+This library allows you to implement transitions with Angular 1.x ngRoute/routerUi with display:block state containers (normally used like frameworks like Bootstrap 3).
+
+Angular route transitions are awesome but you need the containers to have an absolute position to achieve content 
+overlaping during the transition.
 
 ## Installation
 
@@ -63,3 +66,14 @@ For can use these this way:
 ```
 
 And yep, you can create your own transitions and use then this way.
+
+## How it works
+
+Just check the code... I'm kidding. 
+
+What the directive `view-with-transition` does is play with the min-height CSS property of the container of all states 
+and change to `position:absolute` each state container during the duration of the transition. This way during the 
+transition the overlaping of the states containers are allowed and this property is restored when the transition ends.
+
+But seriously, I encourage to read the script and, if you found something to improve or fix, to register a new issue 
+or a pull request.
