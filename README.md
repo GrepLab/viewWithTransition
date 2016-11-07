@@ -1,9 +1,10 @@
 # view-with-transition
 
-This library allows you to implement transitions with Angular 1.x ngRoute/routerUi with display:block state containers (normally used like frameworks like Bootstrap 3).
+Allows you to implement Angular 1.x ngRoute/routerUi transitions with display:block state containers (normally used by frameworks like Bootstrap 3).
 
-Angular route transitions are awesome but you need the containers to have an absolute position to achieve content 
-overlaping during the transition.
+Angular route transitions are awesome but they need the state containers to have an absolute position to achieve content overlaping during the transition. This is because the DOM doesn't allow elements with `position:static` to overlap other elements. The only way to do it is to remove the DOM element you want to overlap from the layout changing its `position` to `absolute`. But doing this you will loose the position and size of the element you extract from the layout so you have to make some fixes. 
+
+This small library contain an unique directive to do this tasks programatically with no fuss for you.
 
 ## Installation
 
@@ -47,9 +48,7 @@ For be able of managing the transition is required to move the ui-view element i
 
 ### Custom transitions
 
-By default the transition used is `fade`. You can set new transitions passing the
-name of the CSS class with the transition as a value of `view-with-transition` 
-directive.
+By default the transition used is `fade`. You can set new transitions passing the name of the CSS class with the transition as a value of `view-with-transition` directive.
 
 #### This library came with a few transition effects:
  - zoom-in
@@ -69,11 +68,12 @@ And yep, you can create your own transitions and use then this way.
 
 ## How it works
 
-Just check the code... I'm kidding. 
+If you want to know how it works just check the code bro.
 
-What the directive `view-with-transition` does is play with the min-height CSS property of the container of all states 
-and change to `position:absolute` each state container during the duration of the transition. This way during the 
-transition the overlaping of the states containers are allowed and this property is restored when the transition ends.
+I'm just kidding. 
 
-But seriously, I encourage to read the script and, if you found something to improve or fix, to register a new issue 
-or a pull request.
+What the directive `view-with-transition` does is play with the min-height CSS property of the container of all states and change to `position:absolute` each state container during the duration of the transition. 
+
+Only during the transition the height of the container is slowly changed and the overlaping of the states containers are allowed.
+
+I encourage to read the script and, if you found something to improve or fix, to register a new issue or a pull request.
